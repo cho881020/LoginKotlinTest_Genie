@@ -23,8 +23,11 @@ class MainActivity : AppCompatActivity() {
 //            ID도 맞고, 비번도 맞아야 함. => 그래야 관리자.
             if (inputId == "admin@test.com" && inputPw == "qwer") {
 
-//                둘다 맞다면 => 관리자 입니다. 토스트
-                Toast.makeText(this, "관리자입니다.", Toast.LENGTH_SHORT).show()
+//                관리자 이름을 변수에 임시 저장.
+                val name = "지니"
+
+//                둘다 맞다면 => 김민수 관리자 입니다. 토스트
+                Toast.makeText(this, "${name} 관리자입니다.", Toast.LENGTH_SHORT).show()
 
             }
             else {
